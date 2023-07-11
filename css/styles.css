@@ -29,6 +29,9 @@ body {
   font-family: "Overpass", "Open Sans", Arial, Helvetica, sans-serif;
   height: 100vh;
   place-items: center;
+  background: url(../images/pattern-curve.svg) no-repeat;
+  background-position: bottom;
+  background-size: contain;
 }
 
 p {
@@ -43,10 +46,11 @@ h2 {
   color: var(--Dark-Blue);
 }
 
+.main {
+  padding: 2rem;
+}
+
 .sections {
-  background: url(../images/pattern-curve.svg) no-repeat;
-  background-position: bottom;
-  background-size: contain;
   margin: 2rem 0;
   padding: 3rem 1rem;
   text-align: center;
