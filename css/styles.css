@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* general variables */
+  --boxShadow: 0 0 5px rgb(250, 234, 230);
+  --boxShadow2: 0px 0px 50px 20px rgba(150, 150, 150, 0.3);
+  --transition: all 0.3s linear;
+  --transition2: all 0.5s linear;
+  --border: 2px solid rgb(228, 7, 166);
+  --border2: 2px solid rgb(28, 28, 192);
+  --border3: 2px solid rgb(9, 224, 88);
+
+  /* variables for this project */
+  --White: hsl(0, 0%, 100%);
+  --Dark-Blue: hsl(240, 38%, 20%);
+  --Grayish-Blue: hsl(240, 18%, 77%);
+}
+
+body {
+  display: grid;
+  font-family: "Overpass", "Open Sans", Arial, Helvetica, sans-serif;
+  height: 100vh;
+  place-items: center;
+}
+
+p {
+  color: var(--Grayish-Blue);
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 0.02rem;
+  margin: 0.25rem 0;
+}
+
+h2 {
+  color: var(--Dark-Blue);
+}
+
+.sections {
+  background: url(../images/pattern-curve.svg) no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  margin: 2rem 0;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.profile-pic {
+  background: url(../images/pattern-bg.svg) no-repeat;
+  background-position: top;
+  background-size: contain;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.profile-pic > img {
+  border-radius: 0.5rem;
+  height: 25rem;
+  object-fit: cover;
+  width: 25rem;
+}
+
+.btn-ctn {
+  background-color: var(--White);
+  border-radius: 2rem;
+  box-shadow: var(--boxShadow2);
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  padding: 0.75rem;
+  position: relative;
+  top: -1.5rem;
+}
+
+.btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0.25rem;
+}
+
+.btn:hover {
+  outline: 1px solid grey;
+}
+
+.article {
+  background: url(../images/pattern-quotes.svg) no-repeat;
+  background-position: top center;
+  background-size: 7rem;
+  padding: 2rem 0;
+}
+
+.person-info {
+  margin: 2rem 0;
+}
+
+@media (min-width: 55rem) {
+  .main {
+    width: auto;
+    max-width: 80rem;
+  }
+
+  .sections {
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 1rem;
+    padding: 5rem;
+  }
+
+  .profile-pic {
+    width: fit-content;
+  }
+
+  .btn-ctn {
+    left: -5rem;
+  }
+
+  .article {
+    background-position: left 5rem top -2rem;
+    background-size: 7rem;
+    line-height: 1.5;
+    margin-right: -6rem;
+    padding-left: 2rem;
+    text-align: left;
+  }
+
+  .article > p {
+    color: var(--Dark-Blue);
+    font-size: 1.5rem;
+  }
+
+  .person-info {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+/* footer styles */
+.my-profile {
+  background-color: var(--Dark-Blue);
+  color: white;
+  font-size: 14px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.my-profile > a {
+  cursor: pointer;
+  color: hsl(51, 79%, 45%);
+  text-decoration: none;
+}
+
+.my-profile-icons a {
+  cursor: pointer;
+  color: var(--White);
+  display: inline-block;
+  margin: 0 5px;
+}
+
+@media screen and (max-width: 500px) {
+  .my-profile {
+    font-size: 12px;
+  }
+
+  .my-profile-icons a:first-of-type,
+  .my-profile-icons a:last-of-type {
+    display: none;
+  }
+}
