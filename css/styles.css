@@ -47,12 +47,13 @@ h2 {
 }
 
 .main {
-  padding: 2rem;
+  width: 400px;
+  transition: var(--transition);
 }
 
 .sections {
   margin: 2rem 0;
-  padding: 3rem 1rem;
+  padding: 3rem 0rem;
   text-align: center;
 }
 
@@ -67,10 +68,11 @@ h2 {
 }
 
 .profile-pic > img {
+  width: 100%;
   border-radius: 0.5rem;
   height: 25rem;
   object-fit: cover;
-  width: 25rem;
+  transition: var(--transition);
 }
 
 .btn-ctn {
@@ -97,6 +99,15 @@ h2 {
   outline: 1px solid grey;
 }
 
+.btn.clicked {
+  transform: translateX(0.05rem);
+}
+
+.btn:focus {
+  border: none;
+  outline: none;
+}
+
 .article {
   background: url(../images/pattern-quotes.svg) no-repeat;
   background-position: top center;
@@ -108,10 +119,11 @@ h2 {
   margin: 2rem 0;
 }
 
-@media (min-width: 55rem) {
+@media (min-width: 50rem) {
   .main {
     width: auto;
     max-width: 80rem;
+    transition: var(--transition);
   }
 
   .sections {
@@ -123,7 +135,8 @@ h2 {
   }
 
   .profile-pic {
-    width: fit-content;
+    width: 300%;
+    padding-bottom: 0;
   }
 
   .btn-ctn {
@@ -148,6 +161,14 @@ h2 {
     align-items: center;
     display: flex;
     gap: 1rem;
+  }
+}
+
+@media (min-width: 60rem) {
+  .profile-pic > img {
+    width: 30rem;
+    height: 30rem;
+    transition: var(--transition);
   }
 }
 

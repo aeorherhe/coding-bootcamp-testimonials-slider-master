@@ -77,6 +77,7 @@ function showNextProfile() {
 
 // show next profile
 nextBtn.addEventListener("click", () => {
+  nextBtn.parentElement.classList.toggle("clicked");
   currentProfile++;
   if (currentProfile >= testimonials.length) {
     currentProfile = 0;
@@ -86,6 +87,7 @@ nextBtn.addEventListener("click", () => {
 
 // show prev profile
 prevBtn.addEventListener("click", () => {
+  prevBtn.parentElement.classList.toggle("clicked");
   currentProfile--;
   if (currentProfile < 0) {
     currentProfile = testimonials.length - 1;
