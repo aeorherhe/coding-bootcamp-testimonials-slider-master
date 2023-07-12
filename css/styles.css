@@ -27,11 +27,10 @@
 body {
   display: grid;
   font-family: "Overpass", "Open Sans", Arial, Helvetica, sans-serif;
-  height: 100vh;
   place-items: center;
   background: url(../images/pattern-curve.svg) no-repeat;
   background-position: bottom;
-  background-size: contain;
+  /* background-size: cover; */
 }
 
 p {
@@ -52,8 +51,7 @@ h2 {
 }
 
 .sections {
-  margin: 2rem 0;
-  padding: 3rem 0rem;
+  margin: 1rem 0 2rem 0;
   text-align: center;
 }
 
@@ -112,7 +110,7 @@ h2 {
   background: url(../images/pattern-quotes.svg) no-repeat;
   background-position: top center;
   background-size: 7rem;
-  padding: 2rem 0;
+  padding: 2rem 1rem;
 }
 
 .person-info {
