@@ -6,7 +6,7 @@ const testimonials = [
     text: `“ I’ve been interested in coding for a while but never taken the
             jump, until now. I couldn’t recommend this course enough. I’m now in
             the job of my dreams and so excited about the future. ”`,
-    img: "../images/image-tanya.jpg",
+    img: "./images/image-tanya.jpg",
   },
   {
     id: 1,
@@ -16,7 +16,7 @@ const testimonials = [
             taking this course. The depth the instructors go into is incredible.
             I now feel so confident about starting up as a professional
             developer. ”`,
-    img: "../images/image-john.jpg",
+    img: "./images/image-john.jpg",
   },
   {
     id: 1,
