@@ -46,7 +46,7 @@ h2 {
 }
 
 .main {
-  width: 400px;
+  max-width: 500px;
   transition: var(--transition);
 }
 
